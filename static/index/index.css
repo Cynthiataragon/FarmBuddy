@@ -1,3 +1,4 @@
+
 #hbody{
     background-color: #E9EFC0;
 }
@@ -19,4 +20,14 @@ p{
     color: #4E944F;
     padding-top:30px;
     padding-bottom:30px;
+}
+#jumbotron {
+    background-color: #4E944F;
+    background-size: cover;
+    height: 300px;
+    background-position: center center;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 75px;
+    color: #E9EFC0;
 }
