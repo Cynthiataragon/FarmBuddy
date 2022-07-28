@@ -1,0 +1,22 @@
+#hbody{
+    background-color: #E9EFC0;
+}
+
+p{
+    font-size: 6em;
+    color: blue;
+}
+#logo{
+    color: #355764;
+    font-size:20px;
+}
+#nav{
+    padding-left:30px;
+}
+#homeh1 {
+    font-size: 40px;
+    text-align: center;
+    color: #4E944F;
+    padding-top:30px;
+    padding-bottom:30px;
+}

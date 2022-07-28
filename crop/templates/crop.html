@@ -1,0 +1,23 @@
+<!-- pass CropModel data -->
+{% load static %}
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="{% static 'taragon/tara.css' %}" type="text/css" />
+
+    </head>
+    <body>
+        <!--Form for searching the Database-->
+        <div>
+            <h1 id="homeh1">Enter your location</h1>
+            <form class="d-flex" method=POST>
+                {% csrf_token %}
+                <input class=" form-control me-2" type="search" placeholder="search" aria-lable="search" /> <br />
+                <button class="btn btn-outline-secondary" type="submit">SEARCH</button>
+            </form>
+            <a href="{% url 'logout' %}">Logout?</a>
+        </div>
+        <!-- pass CropModel data -->
+        <p>Get Crop template in root folder</p>
+        {{data}}
+    </body>
+</html>

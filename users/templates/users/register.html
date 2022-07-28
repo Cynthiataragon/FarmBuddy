@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Index/tara.css' %}" type="text/css" />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/bootsstrap.min.js' %}"></script>
+</head>
+<body id="registerbody">
+    <h3>Register here</h3>
+    <hr>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {% for field in form %}
+        <div>
+            <p>{{ field.label }}: <br> {{ field }}</p>
+
+            {% for error in field.errors %}
+            <small style="color: red">{{ error }}</small>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
+
+
+<h3>Register here</h3>
+<hr>
+<form action="" method="POST">
+    {% csrf_token %}
+
+    {% for field in form %}
+        <div>
+            <p>{{ field.label }}: <br> {{ field }}</p> 
+
+            {% for error in field.errors %}
+                <small style="color: red">{{ error }}</small>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+    <button type="submit">Register</button>
+
+</form>
