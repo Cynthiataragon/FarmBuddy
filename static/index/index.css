@@ -3,10 +3,6 @@
     background-color: #E9EFC0;
 }
 
-p{
-    font-size: 6em;
-    color: blue;
-}
 #logo{
     color: #355764;
     font-size:20px;
@@ -29,5 +25,20 @@ p{
     font-size: 45px;
     text-align: center;
     padding-top: 75px;
+    padding-bottom: 15px;
+    margin-bottom:15px;
     color: #E9EFC0;
+}
+#phome{
+    font-family:Arial;
+}
+
+.nav a {
+    color: #4E944F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-block:double;
+    margin-right:100px;
 }

@@ -22,5 +22,6 @@ def register(request):
     context = {'form': form}
     return render(request,'users/register.html', context)
 
+
 def index(request):
     return render(request,'users/index.html', {})

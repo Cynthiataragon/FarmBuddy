@@ -8,7 +8,7 @@ from .models import CropModel
 #  get all crops class view
 class CropView(View):
     def get(self, request):
-        crops = CropModel.objects.all()
+        crop = CropModel.objects.all()
         return render(request, 'crop.html', {'crops': crops})
 
     def post(self, request):
